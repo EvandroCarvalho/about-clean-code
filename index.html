@@ -1,540 +1,397 @@
 <!doctype html>
-<html lang="en">
+<html>
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+	<title>Clean Code</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Clean Code</h2>
+			</section>
+			<section>
+				<h5 style="color: #004c00; margin-top: 50px;">Sobre Evandro</h5>
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="https://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
-					<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYI553M&placement=revealjscom" id="_carbonads_js"></script>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-					</p>
-					<p>
-						(NOTE: Use ctrl + click in Linux.)
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section data-background-iframe="https://hakim.se" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Iframe Backgrounds</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
+					<div class="texto">
+						<p>Apaixonado por tecnologia</p>
+						<p>Compartilhar e aprender</p>
+						<p>Conhecimento teorico e prático</p>
 					</div>
 				</section>
-
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim data-line-numbers="4,8-9">
-import React, { useState } from 'react';
-
-function Example() {
-  const [count, setCount] = useState(0);
-
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<div class="texto">
+						<p>Java</p>
+						<p>Maven, Gradle</p>
+						<p>Spring MVC, Data JPA, Batch, Actuator, Boot</p>
+						<p>SQL Server, MySql, MariaDB, Postgresql</p>
+						<p>MongoDB, Cassandra, Redis</p>
+						<p>APM, new relic, appDynamic, Prometheus</p>
+						<p>Camel, Kafka, Git, JUnit</p>
+					</div>
 				</section>
-
+			</section>
+			<section>
+				<p>
+					“Master programmers think of systems as stories to be told rather than programs to be written”
+				</p>
+			</section>
+			<section>
+				<img class="img" src="image/gambiarra1.png" alt="gambiarra1" height="500px" width="800px">
+			</section>
+			<section>
+				<img class="img" src="image/gambiarra2.png" alt="gambiarra2" height="500px" width="800px">
+			</section>
+			<section>
+				<img class="img" src="image/gambiarra3.jpg" alt="forte aclopamento">
+			</section>
+			<section class="fragments">
+				<p>“The Boys Scout Rule”</p>
+				<img class="img" src="image/escoteiro.jpeg" width="500px" height="400px">
+				<p>
+					“Always leave the campground cleaner than you found it”
+				</p>
+			</section>
+			<section class="fragments">
+				<p>O que representa um código limpo?</p>
+				<ul class="text">
+					<li class="fragment .fade-in">Simplicidade</li>
+					<li class="fragment .fade-in">Eficiência</li>
+					<li class="fragment .fade-in">Sem duplicidade (D.R.Y)</li>
+					<li class="fragment .fade-int">Resposabilidade única (<span
+							style="color: #004c00;">S</span>.O.L.I.D)</li>
+					<li class="fragment .fade-in">Testavel (F.I.R.S.T.)</li>
+					<li class="fragment .fade-in">...</li>
+				</ul>
+			</section>
+			<section>
+				<p>E um código ruim?</p>
+				<ul class="text">
+					<li class="fragment .fade-in">Precisa de muita manutenção</li>
+					<li class="fragment .fade-in">Caro</li>
+					<li class="fragment .fade-in">Difícil leitura por outros programadores</li>
+					<li class="fragment .fade-int">Inflexível</li>
+					<li class="fragment .fade-int">Frágil</li>
+					<li class="fragment .fade-int">Insepaŕavel</li>
+					<li class="fragment .fade-in">...</li>
+				</ul>
+			</section>
+			<section>
+				<p>então, por quê produzimos código ruim?</p>
+				<ul class="text">
+					<li>Cronogramas apertados</li>
+					<li>Usuários com necessidades urgentes</li>
+					<li>Pressão do gerente</li>
+					<li>"Mostrar o quanto eu sou produtivo"</li>
+					<li>Cansaço</li>
+					<li>Estresse</li>
+					<li>...</li>
+				</ul>
+			</section>
+			<section>
+				<p>Produtividade x Tempo</p>
+				<img class="img" src="image/produtividade x tempo.png" alt="" srcset="">
+			</section>
+			<section>
+				<p style="color: blue; margin-top: 20px">Clean Coders</p>
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+					<p>Bjarne Stroustrup</p>
+					<p class="small-text">Criador do C++</p>
+					<img class="img" src="image/Bjarne-Strounstrup.png" alt="Bjarne Stroustrup" width="300px" height="200px">
+					<p class="text">"Codigo deve ser limpo e eficiente, como uma lógica direta, para minimizar os bug.
+						Código limpo, faz apenas uma coisa"
+					</p>
+				</section>
+				<section>
+					<p>Michael Feathers</p>
+					<p class="small-text">Autor: Working Effectively with LegacyCode</p>
+					<img class="img" src="image/MichaelFeathers.png" alt="MichaelFeaths" width="400px" height="200px">
+					<p class="text">“Parece ter sido escrito por alguém que se importa”</p>
+				</section>
+				<section>
+					<p style="margin-top: 60px;">Grady Booch</p>
+					<p class="small-text">Autor: Software Engineeringwith Ada <br>
+						Object-Oriented Analysis and Design with Applications</p>
+					<img class="img" src="image/Grady-Booch.png" alt="MichaelFeaths" width="300px" height="200px">
+					<p class="text">"Deve ser limpo e direto" <br>
+						"Deve ser legível como uma conversa"</p>
+				</section>
+				<section>
+					<p>Martin Fowler</p>
+					<p class="small-text">Autor: Patterns of Enterprise Application Architecture <br>
+						Refactoring: Improving the Design of Existing Code</p>
+					<img class="img" src="image/Martin-Fowler.jpg" alt="Martin Fowler" width="200px" height="200px">
+					<p class="text">“ Qualquer um consegue escrever código que um computador entende.
+						Bons programadores escrevem código que humanos entendem”</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h5>Robert C. Martin (Uncle Bob)</h5>
+					<img class="img" src="image/Uncle-Bob1.png" alt="Uncle-Bob">
+					<p class="small-text">Robert Cecil Martin, também conhecido como "Uncle Bob", é uma grande
+						personalidade da comunidade
+						de desenvolvimento de software,
+						métodos ágeis e software craftsmanship, atuando na área desde 1970.
+						Atualmente é consultor internacional e autor de vários livros abordando o tema</p>
+				</section>
+				<section>
+					<h5>Livros</h5>
+					<img class="img" src="image/cleancodeBook.jpg" alt="" height="300px" width="250">
+					<img class="img" src="image/thecleancoder.jpg" alt="" height="200px" width="150px">
+					<img class="img" src="image/cleanArchitecture.jpg" height="200px" width="150px">
+				</section>
+			</section>
+			<section>
+				<h5>Vamos para as técnicas</h5>
+			</section>
+			<section class="fragments">
+				<p>Evite mapeamento mental</p>
+				<p class="text">Ex.: a1, a2, a3</p>
+				<p class="text">Mesmo não gerando confusão, o programador tem que traduzir</p>
+			</section>
+			<section>
+				<p class="text"> Evitar codificações</p>
+				<ul class="text">
+					<li>end001_Orc_CadCli.xml</li>
+					<li>cep002_Rec_CadFor.xml</li>
+				</ul>
+				<div class="fragment .fade-in">
+					<p class="text">Represente qual o real objetivo</p>
+					<ul class="text">
+						<li>endereco_orcamento_cadatroCliente_001.xml</li>
+						<li>cep_receita_cadastroFornecedor_002.xml</li>
 					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
+				</div>
+			</section>
+			<section class="fragments">
+				<p>Convenção de nomes</p>
+				<ul>
+					<li class="text">Variavéis, métodos e classes devem usar o estilo CamelCase (Java)</li>
+					<li class="text">Revelam a intenção</li>
+					<li class="text">Fácil de pesquisar</li>
+				</ul>
+			</section>
+			<section class="fragment">
+				<p class="text">Não revela a sua intenção</p>
+				<pre>
+					int codPF;
+					int codPj;
+				</pre>
+				<p class="text">Mais claro</p>
+				<pre>
+					int codigoPessoaFisica;
+					int codigoPessoaJuridica;
+				</pre>
+			</section>
+			<section>
+				<p>Evite nomes comuns</p>
+				<pre>
+					getActiveAccount()
+					getActiveAccounts()
+					getActiveAccountInfo()
+					getActiveAccountData()
+				</pre>
+				<p class="text">Como os programadores deste projeto poderiam saber qual método chamar ? <br>
+					Faça distinções a ponto que o leitor compreenda a diferença
+				</p>
+			</section>
+			<section>
+				<p class="text">Classes não devem ser verbos</p>
+				<pre>
+					class Consultar
+				</pre>
+				<pre class="fragment .fade-in">
+					class Consulta
+				</pre>
+				<p class="text fragment .fade-in">Consulta o que?</p>
+				<pre class="fragment .fade-in">
+					class ConsultaClientePessoaFisica
+				</pre>
+			</section>
+			<section>
+				<p class="text">Nome de métodos devem ser verbos</p>
+				<div>
+					<pre>
+					class Fornecedor {
+						public void pagamento() {
+							...
+				</pre>
+				</div>
+				<pre class="fragment .fade-in">
+					class Fornecedor {
+						public void pagar() {
+								...
+				</pre>
+			</section>
+			<section>
+				<p>Classes</p>
+				<ul class="text">
+					<li>Devem ser pequenas</li>
+					<li>Ter uma única responsabilidade (SRP)</li>
+					<li>Priorizar o encapsulamento</li>
+					<li>Nome de classes normalmente devem ser representadas por substantivos</li>
+				</ul>
+			</section>
+			<section>
+				<p>Single Responsability Principle (SRP)</p>
+				<p class="text">O princípio da responsabilidade única afirma que uma classe deve ter uma única
+					responsabilidade, ou seja,
+					apenas uma razão para mudar, e esta responsabilidade deve ser totalmente encapsulada pela classe.
+					<br>
+					Reduza o acoplamento, se o métodos faz duas ou três coisas diferentes ao mesmo tempo, deve ser
+					considerado a divisão da
+					funcionalidade.
+				</p>
+			</section>
+			<section>
+				<p>Métodos</p>
+				<ul class="text">
+					<li>Devem ser pequenos</li>
+					<li>Ter uma única responsabilidade (SRP)</li>
+					<li>Os nomes dos métodos devem ser verbos</li>
+					<li>Evite repetição (DRY)</li>
+					<li>O nivel de identação não deve ser maior que 2</li>
+					<li>Poucos parâmetros</li>
+				</ul>
+			</section>
+			<section>
+				<p>Para</p>
+				<p class="text">public void save(String name, String cpf, String age)</p>
+				<p>Faça</p>
+				<p class="text">public void save(Person person)</p>
+			</section>
+			<section>
+				<p>Comentários</p>
+				<ul class="text">
+					<li>Um código bem explicado não necessita de comentários</li>
+					<li>Se tiver que explicar o seu código, refatore-o</li>
+					<li>Comentários não são atualizados, e por isso mentem</li>
+				</ul>
+			</section>
+			<section>
+				<pre>
+					// verifica se conta está usando cheque especial
+					if ( conta.getTipo().equals(Tipo.CORRENTE) && conta.getSaldo() &lt; 0 ) {
+						...
+					}
+				</pre>
+				<div class="fragment .fade-in">
+					<p class="text">Mais claro e descritivo</p>
+					<pre>
+					if ( conta.estaUsandoChequeEspecial() ) {
+						...
+					}
+				</pre>
+				</div>
+			</section>
+			<section>
+				<p>Formatação</p>
+				<ul class="text">
+					<li>Classes menores são mais facil de entender</li>
+					<li>Conceitos relacionados devem ficar próximos</li>
+					<li>Limite o tamanho da linha (120 caracters - Uncle Bob)</li>
+					<li>Combine um estilo com a equipe (checkStyle Java - Maven)</li>
+				</ul>
+			</section>
+			<section>
+				<p>Tratamento de Erros</p>
+				<ul class="text">
+					<li>Sempre lance exceções ao retornar um erro para o usuário</li>
+					<li>Forneça exceções de contexto</li>
+					<li>Não retorne null</li>
+					<li>Não passe null</li>
+				</ul>
+			</section>
+			<section>
+				<p>Teste!</p>
+				<p class="text">O teste é tão importante quanto o código de produção</p>
+				<p class="text">Construção, operação e verificação</p>
+				<p class="text">F.I.R.S.T.</p>
+			</section>
+			<section>
+				<h5>Princípios de um teste unitário (F.I.R.S.T)</h5>
+				<div class="text">
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>
+							<h5><u>F</u>ast - Um teste unitário deve ser executado rápido</h5>
+						</li>
+						<li>
+							<h5><u>I</u>ndepentent - Não deve depender de outro, podendo rodar em qualquer ordem</h5>
+						</li>
+						<li>
+							<h5><u>R</u>epeatable - Pode ser executado quantas vezes quiser, mas trazendo o mesmo resultado</h5>
+						</li>
+						<li>
+							<h5><u>S</u>elf-Verifying - Auto verificavel, saber quando a execução foi correta e quando falhou</h5>
+						</li>
+						<li>
+							<h5><u>T</u>imely - Deve ser criado no momento correto</h5>
+						</li>
 					</ul>
-				</section>
+			</section>
+			<section>
+				<p>Enfim</p>
+				<p class="text">Não escreva código complexo, tempo e recursos gastos em um código ilegível serão muito
+					maiores do que os obtidos com a otimização.</p>
+				<p class="text">E mais importante, o code review deve ser motivacional e com compartilhamento de
+					conhecimento, em vez de questinar a compêtencia</p>
+			</section>
+			<section data-background=https://media.giphy.com/media/YTFHYijkKsXjW/giphy.gif>
+				<p>“Clean code is simple and direct. Clean code reads like well-written prose." Grady Booch</p>
+			</section>
+			<section>
+				<p>Fontes</p>
+				<div class="text">
+					<a href="https://www.amazon.com.br/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM/ref=sr_1_3?adgrpid=61526443084&gclid=Cj0KCQiA1-3yBRCmARIsAN7B4H3ENptXL4CT7Vj8JhLcCbD6vozBSYM0QtROBRUWZwqvvlfk_W7AqPoaAiFUEALw_wcB&hvadid=326935150211&hvdev=c&hvlocphy=1001590&hvnetw=g&hvqmt=b&hvrand=9668697440939330906&hvtargid=kwd-300579025401&hydadcr=5621_10696861&keywords=clean+coder&qid=1583127695&sr=8-3">
+						Clean Code: A Handbook of Agile Software Craftsmanship</a> <br>
+					<a href="https://www.slideshare.net/fontestz/clean-code-rogeriofontestechfridayeveris">Clean code - Rogerio Fontes</a> <br>
+					<a href="https://medium.com/better-programming/clean-code-5-essential-takeaways-2a0b17ccd05c">Clean Code 5 essential takeaways</a> <br>
+					<a href="https://medium.com/@albigiu/clean-code-a-love-storys-takeaways-33f3e00c875e">Clean code: takeaways from a love story</a> <br>
+					<a href="https://medium.com/@madhupathy/ultimate-clean-code-guide-for-java-spring-based-applications-4d4c9095cc2a">
+						Ultimate Clean Code Guide for Java, Spring based Applications</a>
+				</div>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the reveal.js editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
-			</div>
-
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js' },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-		<!-- Everything below this point is only used for the reveal.js demo page -->
-
-		<header class="reveal-header">
-			<a class="reveal-header-button" href="https://github.com/hakimel/reveal.js">Source on <em>GitHub</em></a>
-			<span class="reveal-header-delimiter">•</span>
-			<a class="reveal-header-button" href="https://slides.com">Try the reveal.js <em>editor</em></a>
-			<span class="reveal-header-delimiter">•</span>
-			<a class="reveal-header-button" href="https://twitter.com/hakimel">@hakimel</a>
-		</header>
-
-		<style>
-			.reveal-header {
-				display: block;
-				position: absolute;
-				top: 12px;
-				right: 16px;
-				z-index: 20;
-				color: #fff;
-				font-family: "Source Sans Pro", Helvetica, sans-serif;
-				font-size: 14px;
-				letter-spacing: 0.05em;
-			}
-
-			.reveal-header-button {
-				display: inline-block;
-				padding: 14px 10px;
-				color: rgba(255,255,255,0.7);
-				text-transform: uppercase;
-				text-decoration: none;
-				font-weight: 500;
-				box-sizing: border-box;
-				text-align: center;
-			}
-
-			.reveal-header-button em {
-				color: #fff;
-			}
-
-			.reveal-header-button:hover {
-				color: #fff;
-				background: rgba(0,0,0,0.2);
-			}
-
-			.reveal-header-button  + .reveal-header-button {
-				margin-left: 10px;
-			}
-
-			@media screen and (max-width: 500px) {
-				body {
-					display: flex;
-					flex-direction: column;
-				}
-
-				.reveal-header {
-					display: flex;
-					position: initial;
-					background: rgba(0,0,0,0.2);
-					align-items: center;
-					justify-content: flex-end;
-					font-size: 13px;
-					font-size: min(3.8vw, 14px);
-					align-items: center;
-					width: 100%;
-				}
-				.reveal-header-button {
-					flex-grow: 1;
-					margin: 0;
-					padding-left: 4px;
-					padding-right: 4px;
-					text-transform: none;
-				}
-				.reveal-header-delimiter {
-					display: none;
-				}
-			}
-
-			/* Advertising */
-			#carbonads {
-				width: 370px;
-				min-height: 100px;
-				font-size: 18px;
-				border: 1px solid rgba(255, 255, 255, 0.2);
-				padding: 10px;
-				margin: 40px auto 0 auto;
-				font-size: 16px;
-				z-index: 10;
-				text-align: left;
-			}
-
-			#carbonads .carbon-img img {
-				float: left;
-				margin: 0 10px 0 0;
-				border: 0;
-				box-shadow: none;
-			}
-
-			#carbonads .carbon-poweredby {
-				display: block;
-				margin-top: 10px;
-				color: #aaa;
-			}
-		</style>
-
-		<script>
-		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
-		(function(d, t) {
-		var g = d.createElement(t),
-			s = d.getElementsByTagName(t)[0];
-		g.async = true;
-		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g, s);
-		})(document, 'script');
-		</script>
-
-	</body>
 </html>
