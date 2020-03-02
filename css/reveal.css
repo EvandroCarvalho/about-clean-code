@@ -1604,3 +1604,24 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.img {
+  border: none !important; 
+  box-shadow: none"
+}
+
+.text {
+  font-size: 30px;
+}
+
+.small-text {
+  font-size: 20px;
+}
+
+pre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  font-family: unset;
+}
